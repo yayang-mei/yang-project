@@ -44,10 +44,10 @@
                         <div class="container">
                             <nav>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a>
+                                    <li><a href="#slider" class="scroll-to">Home</a></li>
+                                    <li><a href="#about" class="scroll-to">About</a>
                                     </li>
-                                    <li><a href="#">Portfolio</a>
+                                    <li><a href="#portfoliol" class="scroll-to">Portfolio</a>
                                     </li>
                                     <li><a href="#">Blog</a>
                                     </li>
@@ -75,7 +75,7 @@
                 <!-- Captions -->
                 <h1>WELCOME TO THE WORLD OF POLO</h1>
                 <p>Say hello to the smartest and most flexible bootstrap template. Polo is an powerful template that can build any type of websites, and quite possibly the only one you will ever need.</p>
-                <a href="#welcome" class="btn scroll-to" >Explore more</a>
+                <a href="#about" class="btn scroll-to" >Explore more</a>
                 <!-- end: Captions -->
             </div>
         </div>
@@ -89,7 +89,7 @@
                 <!-- Captions -->
                 <h1>200+ Laytout Demos</h1>
                 <p class="text-small">POLO is packed with 200+ pre-made layouts that allow you to quickly jumpstart your project. Completely customizable for creating your own designs.</p>
-                <a href="#welcome" class="btn scroll-to" >Explore more</a>
+                <a href="#about" class="btn scroll-to" >Explore more</a>
                 <!-- end: Captions -->
             </div>
         </div>
@@ -98,6 +98,23 @@
 
 </div>
 <!--end: Slider -->
+<!-- About-->
+<section id="about" class="p-b-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5"> <img alt="" src="images/other/5.jpg"> </div>
+            <div class="col-lg-7">
+                <div class="heading-text heading-section mt-5">
+                    <h1>Light Section</h1>
+                <p>Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.</p>
+                <a class="btn" href="#"><i class="fa fa-tint"></i> Learn more</a> 
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About-->
 <!--My Services-->
         <section id="welcome" style="background: #F8F9FA; border-color: #F8F9FA;">
             <div class="container">
@@ -179,17 +196,33 @@
                 </div>
         </section>
 <!--My Services-->
-        <!-- PORTFOLIO -->
-        <section class="p-b-0">
+        <!-- Content -->
+        <section id="portfoliol">
             <div class="container">
-                <div class="heading-text heading-section">
-                    <h2>RECENT WORK</h2>
-                    <span class="lead">Lorem ipsum dolor sit amet, coper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</span>
+                <div class="col-lg-4">
+                    <div data-animate="fadeInUp" style="margin-top:30px; margin-bottom:20px;">
+                        <h2 class="text-bold text-left">My Portfolio</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies tellus in feugiat enim interdum tempor aenean arcu.</p> 
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio">
-                <!-- Portfolio Items -->
-                <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
+                <!-- Portfolio Filter -->
+                <div class="grid-filter gf-lines text-center center" data-layout="#portfolio">
+                    <ul>
+                        <li class="active"><a href="#" data-category="*">Show All</a></li>
+                        <li><a href="#" data-category=".ct-branding">Branding</a></li>
+                        <li><a href="#" data-category=".ct-photography">Photography</a></li>
+                        <li><a href="#" data-category=".ct-marketing">Marketing</a></li>
+                        <li><a href="#" data-category=".ct-media">Media</a></li>
+                        <li><a href="#" data-category=".ct-webdesign">Web design</a></li>
+                    </ul>
+                </div><br>
+                <!-- end: Portfolio Filter -->
+
+
+
+                <!-- Portfolio -->
+                <div id="portfolio" class="grid-layout portfolio-3-columns" data-margin="20">
+
 
                     <!-- portfolio item -->
                     <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-webdesign">
@@ -219,8 +252,29 @@
                     <!-- end: portfolio item -->
 
 
+                    
                     <!-- portfolio item -->
-                    <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
+                    <div class="portfolio-item overlay-light img-zoom ct-photography ct-media ct-branding ct-Media ct-webdesign">
+                        <div class="portfolio-item-wrap">
+                            <div class="portfolio-slider">
+                                <div class="carousel dots-inside arrows-dark dots-dark" data-items="1" data-loop="true" data-autoplay="true" data-autoplay-timeout="1800">
+                                    <a href="#"><img src="images/portfolio/22.jpg" alt=""></a>
+                                    <a href="#"><img src="images/portfolio/23.jpg" alt=""></a>
+                                    <a href="#"><img src="images/portfolio/24.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-description">
+                                <a href="portfolio-page-grid-gallery.html">
+                                    <h3>Stockholm Fashion</h3>
+                                    <span>Illustrations / Graphics</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: portfolio item -->
+                    
+                    <!-- portfolio item -->
+                    <div class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
                         <div class="portfolio-item-wrap">
                             <div class="portfolio-image">
                                 <a href="#"><img src="images/portfolio/61.jpg" alt=""></a>
@@ -235,13 +289,13 @@
                     </div>
                     <!-- end: portfolio item -->
 
-                    <!-- portfolio item -->
-                    <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+
+                    <!-- portfolio item --><div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
                         <div class="portfolio-item-wrap">
                             <div class="portfolio-image">
                                 <a href="#"><img src="images/portfolio/65.jpg" alt=""></a>
                             </div>
-
+                            
                             <div class="portfolio-description" data-lightbox="gallery">
                                 <a title="Photoshop Mock-up!" data-lightbox="gallery-image" href="images/portfolio/80l.jpg"><i class="fa fa-clone"></i></a>
                                 <a title="Paper Pouch!" data-lightbox="gallery-image" href="images/portfolio/81l.jpg" class="hidden"></a>
@@ -251,6 +305,7 @@
                         </div>
                     </div>
                     <!-- end: portfolio item -->
+
 
                     <!-- portfolio item -->
                     <div class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
@@ -269,8 +324,7 @@
                     <!-- end: portfolio item -->
 
 
-                    <!-- portfolio item -->
-                    <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+                    <!-- portfolio item -->                   <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
                         <div class="portfolio-item-wrap">
                             <div class="portfolio-image">
                                 <a href="#"><img src="images/portfolio/67.jpg" alt=""></a>
@@ -313,8 +367,43 @@
                         </div>
                     </div>
                     <!-- end: portfolio item -->
+
+                    <!-- portfolio item -->
+                    <div class="portfolio-item img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
+                        <div class="portfolio-item-wrap">
+                            <div class="portfolio-image">
+                                <a href="#"><img src="images/portfolio/70.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio-description">
+                                <a href="portfolio-page-grid-gallery.html">
+                                    <h3>Last Iceland Sunshine</h3>
+                                    <span>Graphics</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: portfolio item -->
+
+
+                    <!-- portfolio item -->
+                    <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+                        <div class="portfolio-item-wrap">
+                            <div class="portfolio-image">
+                                <a href="#"><img src="images/portfolio/72.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio-description">
+                                <a href="portfolio-page-grid-gallery.html">
+                                    <h3>Towel World</h3>
+                                    <span>Graphics</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: portfolio item -->
+
+
                 </div>
-                <!-- end: Portfolio Items -->
+                <!-- end: Portfolio -->
 
             </div>
         </section>
@@ -330,9 +419,11 @@
         <!-- BLOG -->
         <section class="content background-grey">
             <div class="container">
-                <div class="heading-text heading-section">
-                    <h2>OUR BLOG</h2>
-                    <span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </span>
+                <div class="col-lg-4">
+                    <div data-animate="fadeInUp" style="margin-top:30px; margin-bottom:20px;">
+                        <h2 class="text-bold text-left">Recent Articles</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies tellus in feugiat enim interdum tempor aenean arcu.</p> 
+                    </div>
                 </div>
                 <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
 
@@ -544,75 +635,90 @@
             </div>
         </section>
         <!-- end: TEAM -->
-
-        <!-- Footer -->
-       <footer id="footer">
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                            <div class="col-lg-5">
-                                    <div class="widget">
-                                
-                                            <div class="widget-title">Polo HTML5 Template</div>
-                                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
-                                                All rights reserved. Copyright © 2019. INSPIRO.</p>
-                                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted">Purchase Now</a>
-                                    </div>
-                        </div> <div class="col-lg-7">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                        <div class="widget">
-                                            <div class="widget-title">Discover</div>
-                                            <ul class="list">                                           
-                                                    <li><a href="#">Features</a></li>
-                                                    <li><a href="#">Layouts</a></li>
-                                                    <li><a href="#">Corporate</a></li>
-                                                    <li><a href="#">Updates</a></li>
-                                                    <li><a href="#">Pricing</a></li>
-                                                    <li><a href="#">Customers</a></li>
-                                                </ul>
-                                        </div>  
-                                    </div>
-
-                                        <div class="col-lg-3">
-                                                <div class="widget">
-                                                    <div class="widget-title">Features</div>
-                                                    <ul class="list">                                           
-                                                            <li><a href="#">Layouts</a></li>
-                                                            <li><a href="#">Headers</a></li>
-                                                            <li><a href="#">Widgets</a></li>
-                                                            <li><a href="#">Footers</a></li>
-                                                        </ul>
-                                                </div>  
-                                            </div>
-                                
-                                                <div class="col-lg-3">
-                                                        <div class="widget">
-                                                            <div class="widget-title">Pages</div>
-                                                            <ul class="list">                                           
-                                                                    <li><a href="#">Portfolio</a></li>
-                                                                    <li><a href="#">Blog</a></li>
-                                                                    <li><a href="#">Shop</a></li>
-                                                                </ul>
-                                                        </div>  
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                            <div class="widget">
-                                                                <div class="widget-title">Support</div>
-                                                                <ul class="list">                                           
-                                                                        <li><a href="#">Help Desk</a></li>
-                                                                        <li><a href="#">Documentation</a></li>
-                                                                        <li><a href="#">Contact Us</a></li>
-                                                                    </ul>
-                                                            </div>  
-                                                        </div>
-                            </div>
+<!-- contact-->
+<section class="p-t-150 p-b-200" style="background-image:url(homepages/branding/images/background-4.png); background-position:71% 22%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="m-b-10">Get in Touch with Us</h2>
+                        <p class="lead">Our Headquarters are in Australia, USA, Europe, Asia, Africa </p>
+                    </div>
+                    <div class="col-lg-6 m-b-30">
+                        <address>
+                        <strong>Headquarters:</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                    </address>
+                        <strong>Phone:</strong> (+1) 1234 56789
+                        <br>
+                        <strong>Fax:</strong> (+1) 12 3456 78910
+                        <br>
+                        <strong>Email:</strong> info@inspiro-media.com
+                    </div>
+                    <div class="col-lg-6 m-b-30">
+                        <address>
+                        <strong>Headquarters:</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                    </address>
+                        <strong>Phone:</strong> (+1) 1234 56789
+                        <br>
+                        <strong>Fax:</strong> (+1) 12 3456 78910
+                        <br>
+                        <strong>Email:</strong> info@inspiro-media.com
+                    </div>
+                    <div class="col-lg-12 m-b-30">
+                        <h4>We are social</h4>
+                        <div class="social-icons social-icons-light social-icons-colored-hover">
+                            <ul>
+                                <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social-vimeo"><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                                <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="social-pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li class="social-gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li class="social-dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                <li class="social-skype"><a href="#"><i class="fab fa-skype"></i></a></li>
+                                <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="social-behance"><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li class="social-flickr"><a href="#"><i class="fab fa-flickr"></i></a></li>
+                            </ul>
                         </div>
-                
-
-                </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-lg-5 offset-1">
+                <form class="widget-contact-form" action="include/contact-form.php" role="form" method="post">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" aria-required="true" name="widget-contact-form-name" class="form-control required name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" aria-required="true" name="widget-contact-form-email" class="form-control required email" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea type="text" name="widget-contact-form-message" rows="8" class="form-control required" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-light" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Contact-->
+        <!-- Footer -->
+       <footer id="footer">
             <div class="copyright-content">
                 <div class="container">
                     <div class="copyright-text text-center">&copy; 2019 POLO -  Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="http://www.inspiro-media.com" target="_blank"> INSPIRO</a> </div>
